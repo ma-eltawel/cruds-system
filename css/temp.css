@@ -1,0 +1,86 @@
+/* start global */
+*{
+    margin:0;
+    padding: 0;
+    color: white;
+    text-decoration: none;
+    font-family: system-ui;
+    scroll-behavior: smooth;
+}
+body{
+    background: #222;
+}
+/* end global */
+.container{
+    width: 86%;
+    margin: auto;
+}
+/* start head */
+header{
+    text-align: center;
+    margin: 10px;
+}
+h2{
+    text-transform: uppercase;
+}
+/* end head */
+/* start inputs */
+input, button{
+    font-size: 18px;
+    width: 100%;
+    height: 30px;
+    border: none;
+}
+input{
+    outline: none;
+    border-radius: 6px;
+    background-color: #111;
+    margin: 4px 0;
+    padding: 4px; 
+}
+input:focus{
+    background-color: black;
+    transform: scale(1.1);
+}
+.inputs .price input{
+    width: 20%;
+}
+.price small{
+    font-size: 18px;
+    margin-left: 20px;
+    background-color: orangered;
+    padding: 4px;
+    border-radius: 4px;
+}
+.price small::before{
+    content: 'Total: ';
+}
+button{
+    margin: 5px 0;
+    cursor: pointer;
+    background-color: saddlebrown;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+button:hover{
+    background-color: sienna;
+    letter-spacing: 1px;
+}
+/* end inputs */
+/* start outputs */
+.outputs .but{
+    display: flex;
+    gap: 10%;
+}
+#deleteAll{
+    margin: 15px 0;
+}
+.outputs table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+.outputs th, .outputs td{
+    padding: 5px;
+}
+/* end outputs */
